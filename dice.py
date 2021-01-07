@@ -8,17 +8,15 @@ import time
 # ask what size die is needed
 print("Typical Dice to roll: 4, 6, 8, 12, 20, 100")
 
-die_size = int(input("What Die should be rolled? "))
-die_count = int(input("How many dice should be rolled? "))
+die_size: int = int(input("What Die should be rolled? "))
+die_count: int = int(input("How many dice should be rolled? "))
 
 
-def rollDice():
+def roll_dice():
     # Variables
-    dieMin = 1
-    dieMax = die_size
+    die_min = 1
+    die_max = die_size
     die_array = []
-    die_row = []
-    die_row_final = ""
     total = int(0)
     separator = ", "
 
@@ -26,11 +24,12 @@ def rollDice():
     time.sleep(1)
     print("The values are....")
     for roll in range(die_count):
-        single_die = int(random.randint(dieMin, dieMax))
+        single_die = int(random.randint(die_min, die_max))
         die_array.append(single_die)
     print(separator.join(map(str, die_array)))
     for roll in die_array:
         total += roll
     print("Total of dice rolled: %d" % total)
 
-rollDice()
+
+roll_dice()
