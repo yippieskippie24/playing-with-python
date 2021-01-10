@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# written by Tyler M Johnson
+# Written by Tyler M Johnson
 # https://github.com/yippieskippie24/playing-with-python
 
 import random
