@@ -3,3 +3,5 @@ test.file
 new line added
 
 another line
+
+third new line.
