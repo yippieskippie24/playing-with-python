@@ -23,12 +23,12 @@ def roll_dice():
     print("Rolling the dices...")
     time.sleep(1)
     print("The values are....")
-    for roll in range(die_count):
+    for i in range(die_count):
         single_die = int(random.randint(die_min, die_max))
         die_array.append(single_die)
     print(separator.join(map(str, die_array)))
-    for roll in die_array:
-        total += roll
+    for i in die_array:
+        total += i
     print("Total of dice rolled: %d" % total)
 
 
