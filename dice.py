@@ -26,5 +26,17 @@ def roll_dice():
     for i in die_array:
         total += i
     print("Total of dice rolled: %d" % total)
+    print("")
+
+def roll_again():
+    answer = str(input("Roll dice again?  y or n: "))
+    if answer == "y":
+        roll_dice()
+    elif answer == "n":
+        exit()
+    else :
+        print("Please enter y or n")
+        roll_again()
 
 roll_dice()
+roll_again()
