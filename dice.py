@@ -18,8 +18,7 @@ def roll_dice():
 
 
     for i in range(int(input("How many dice should be rolled? "))):
-        single_die = int(random.randint(die_min, die_max))
-        die_array.append(single_die)
+        die_array.append(int(random.randint(die_min, die_max)))
     print("Rolling the dices...")
     time.sleep(1)
     print("The values are....")
@@ -27,6 +26,5 @@ def roll_dice():
     for i in die_array:
         total += i
     print("Total of dice rolled: %d" % total)
-
 
 roll_dice()
